@@ -1,10 +1,10 @@
-$('#all-button').click(()=>{
+$('#all-button').click(() => {
     $('#all-box').fadeIn();
     $('#all-button').fadeOut();
-//     $("body").css('background-color', '#f4e0cc');
-//     $("body").css('background-color', '#262601');
-//     $("body").css('background-color', '#fafafa');
-     $("body").css('background-color', '#eff3f7');
+    //     $("body").css('background-color', '#f4e0cc');
+    //     $("body").css('background-color', '#262601');
+    //     $("body").css('background-color', '#fafafa');
+    $("body").css('background-color', '#eff3f7');
 });
 
 
@@ -86,20 +86,31 @@ $('#all-btn').click(function () {
 
 
 $(document).ready(function () {
-
     $(window).scroll(function () {
 
-        
+
         var 높이 = $(window).scrollTop();
-//        console.log(높이);
-        
-        $('#info-box').css("opacity", 0 + $(window).scrollTop() / 400);
-//        $('#info-box').scrollLeft(2)
+//                console.log(높이);
 
-        $('#work-box').css("opacity", 0 + $(window).scrollTop() / 1000);
+        $('#info-box').css("opacity", 0 + $(window).scrollTop() / 600);
+        //        $('#info-box').scrollLeft(2)
 
-        $('#scroll-lock').css("opacity", 0 + $(window).scrollTop() / 2200);
+        $('#work-box').css("opacity", 0 + $(window).scrollTop() / 1200);
 
-        $('#pro-box').css("opacity", 0 + $(window).scrollTop() / 2200);
+        $('#scroll-lock').css("opacity", 0 + $(window).scrollTop() / 2500);
+
+        $('#pro-box').css("opacity", 0 + $(window).scrollTop() / 2500);
     });
+});
+
+
+$(window).on('scroll', function () {
+
+    if ($(window).scrollTop() > 800) {
+        $('.nav-menu').addClass('nav-black');
+        $('.nav-menu h4').addClass('small-logo');
+    } else {
+        $('.nav-menu').removeClass('nav-black');
+        $('.nav-menu h4').removeClass('small-logo');
+    }
 });

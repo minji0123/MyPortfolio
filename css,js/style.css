@@ -11,7 +11,7 @@ body {
 }
 
 .space {
-    margin: 30px;
+    margin: 80px;
 }
 
 .start {
@@ -32,6 +32,46 @@ body {
 .start p {
     margin: 0px;
 }
+
+.nav-menu {
+    display: flex;
+/*    justify-content: space-between;*/
+    padding: 11px;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    color: aliceblue;
+}
+
+.nav-black {
+    background: #eff3f7;
+    color: #393D3F;
+}
+.large-logo {
+    font-size: 30px;
+    margin: 0;
+    margin-left: 20px;
+    transition: all 0.5s;
+}
+
+.small-logo {
+    font-size: 26px;
+
+}
+
+#nav-sub-button1 {
+    cursor: pointer;
+    margin-left: 1130px;
+    font-size: 20px;
+}
+#nav-sub-button2 {
+    cursor: pointer;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
 
 
 .white-box {
@@ -120,7 +160,8 @@ body {
 
 .main-background {
     width: 100%;
-    height: 800px;
+/*    height: 800px;*/
+    height: 100vh;
     background-image: url(../image/workspace.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -128,7 +169,7 @@ body {
     background-position: center;
     padding: 1px;
     position: relative;
-    border-radius: 5px;
+/*    border-radius: 5px;*/
 }
 
 
@@ -271,7 +312,7 @@ body {
 #scroll-lock {
     position: sticky;
     float: left;
-    top: 20px;
+    top: 50px;
     width: 100%;
 }
 
@@ -312,6 +353,8 @@ body {
     width: 80%;
     max-width: 600px;
     margin: auto;
+    border-radius: 15px;
+
 }
 
 .form-input {
