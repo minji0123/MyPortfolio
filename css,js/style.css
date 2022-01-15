@@ -7,11 +7,18 @@ body {
     box-sizing: border-box;
     margin: 0px;
     background: lightgrey;
-
+    transition: background-color 1s ease;
 }
 
+/*
+body {
+  background-color: #f4f4f4;
+}
+*/
+
 .space {
-    margin: 80px;
+/*    margin: 80px;*/
+    padding-top: 100px;
 }
 
 .start {
@@ -35,9 +42,9 @@ body {
 
 .nav-menu {
     display: flex;
-/*    justify-content: space-between;*/
+    justify-content: space-between;
     padding: 11px;
-    align-items: center;
+/*    align-items: center;*/
     background-color: transparent;
     position: fixed;
     z-index: 5;
@@ -63,12 +70,13 @@ body {
 
 #nav-sub-button1 {
     cursor: pointer;
-    margin-left: 1130px;
+/*    margin-left: 1130px;*/
     font-size: 20px;
 }
 #nav-sub-button2 {
     cursor: pointer;
     margin-left: 50px;
+    margin-right: 50px;
     font-size: 20px;
 }
 
@@ -80,7 +88,6 @@ body {
     border-radius: 15px;
     /*    box-shadow: 0.5px 0.5px 2px 1px #eee;*/
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-
 }
 
 .yellow-box {
@@ -192,7 +199,6 @@ body {
 
 
 .para-title {
-    /*    display: none;*/
     color: aliceblue;
     font-size: 25px;
     font-family: 'Do Hyeon', sans-serif;
@@ -298,13 +304,22 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
-    
-
 }
 
 .work-white-box:hover {
     transform: scale(.9);
 }
+
+/*
+work-box-f {
+    display: none;
+}
+work-box-l {
+    display: block;
+}
+*/
+
+
 
 
 
@@ -476,3 +491,5 @@ table td {}
 #all-button {
     height: 100vh;
 }
+
+

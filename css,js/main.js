@@ -92,14 +92,14 @@ $(document).ready(function () {
         var 높이 = $(window).scrollTop();
 //                console.log(높이);
 
-        $('#info-box').css("opacity", 0 + $(window).scrollTop() / 600);
+        $('#info-box').css("opacity", 0 + $(window).scrollTop() / 900);
         //        $('#info-box').scrollLeft(2)
 
-        $('#work-box').css("opacity", 0 + $(window).scrollTop() / 1200);
+        $('#work-box').css("opacity", 0 + $(window).scrollTop() / 1800);
 
-        $('#scroll-lock').css("opacity", 0 + $(window).scrollTop() / 2500);
+        $('#scroll-lock').css("opacity", 0 + $(window).scrollTop() / 2700);
 
-        $('#pro-box').css("opacity", 0 + $(window).scrollTop() / 2500);
+        $('#pro-box').css("opacity", 0 + $(window).scrollTop() / 2700);
     });
 });
 
@@ -114,3 +114,17 @@ $(window).on('scroll', function () {
         $('.nav-menu h4').removeClass('small-logo');
     }
 });
+
+
+//$(window).on('scroll', function () {
+//
+//    if ($(window).scrollTop() > 1600) {
+////        $('.work-box-f').addClass('nav-black');
+//        $('.work-box-f').removeClass('work-box-l');
+//    } else {
+////        $('.work-box-f').removeClass('nav-black');    
+//        $('.work-box-f').addClass('work-box-l');
+//    }
+//});
+
+
