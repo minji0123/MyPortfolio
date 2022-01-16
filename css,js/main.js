@@ -5,11 +5,12 @@ $('#all-button').click(() => {
 });
 
 
-const clickNav = ['#nav-sub-button0', '#nav-sub-button1','#nav-sub-button2','#nav-sub-button3'];
-const moveDiv = ['.main-background', '#scroll-info', '#scroll-work', '#scroll-proj'];
+const clickNav = ['#nav-sub-button0', '#nav-sub-button1','#nav-sub-button2','#nav-sub-button3', '#nav-sub-button4', '#nav-sub-button5'];
+
+const moveDiv = ['.main-background', '#scroll-info', '#scroll-work', '#scroll-proj', '#scroll-doc', '#scroll-cont'];
 
 $(document).ready(function () {
-    for(let i=0; i<4; i++){
+    for(let i=0; i<=5; i++){
         $(clickNav[i]).click(function () {
             var offset = $(moveDiv[i]).offset(); //선택한 태그의 위치를 반환
 
@@ -41,7 +42,6 @@ $('.main-title').click(function () {
 });
 
 var clickBool = false;
-
 $('#button').click(function () {
 
     if (clickBool === false) {
@@ -52,6 +52,7 @@ $('#button').click(function () {
         clickBool = false;
     }
 });
+
 
 
 $('#mec-btn').click(function () {
@@ -128,17 +129,8 @@ $(window).on('scroll', function () {
     } else {
         $('.nav-menu').removeClass('nav-black');
         $('.nav-menu h4').removeClass('small-logo');
+
     }
 });
 
 
-//$(window).on('scroll', function () {
-//
-//    if ($(window).scrollTop() > 1600) {
-////        $('.work-box-f').addClass('nav-black');
-//        $('.work-box-f').removeClass('work-box-l');
-//    } else {
-////        $('.work-box-f').removeClass('nav-black');    
-//        $('.work-box-f').addClass('work-box-l');
-//    }
-//});

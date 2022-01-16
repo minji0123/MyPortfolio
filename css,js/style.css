@@ -63,19 +63,39 @@ a {
 
 .small-logo {
     font-size: 36px;
-
 }
-
 #nav-sub-button1 {
     cursor: pointer;
-/*    margin-left: 1130px;*/
-    font-size: 25px;
+    font-size: 22px;
 }
+
 #nav-sub-button2 {
     cursor: pointer;
-    margin-left: 40px;
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+#nav-sub-button3 {
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+#nav-sub-button0 {
+    cursor: pointer;
+}
+
+#nav-sub-button4 {
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+#nav-sub-button5 {
+    cursor: pointer;
+    margin-left: 30px;
     margin-right: 30px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 
@@ -211,6 +231,11 @@ a {
     margin-bottom: -10px;
 }
 
+.work-main-title {
+    font-size: 36px;
+    text-align: center;
+}
+
 .work-title {
     margin: 0px;
     text-align: center;
@@ -224,10 +249,13 @@ a {
     margin-bottom: -10px;
 }
 
+
 .project-title {
-    color: #393D3F;
     font-size: 36px;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
 
 
@@ -444,9 +472,24 @@ table {
     border-collapse: separate;
 }
 
-table td {}
 
+.card-background {
+    height: 3000px;
+/*    margin-top: 800px;*/
+    margin-bottom: 70px;
+}
 
+.card-box img{
+    display: block;
+    margin: auto;
+    max-width: 80%;
+}
+
+.card-box{
+    position: sticky;
+    top: 60px;
+    margin-top: 50px;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -482,6 +525,9 @@ table td {}
 
 }
 
+
+
+
 /*
 1200px(태블릿) / 992px / 768px(모바일) / 576px(모바일)
     너무 세분화하지마셈*/
@@ -490,15 +536,3 @@ table td {}
     height: 100vh;
 }
 
-
-
-#nav-sub-button3 {
-    cursor: pointer;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 25px;
-}
-
-#nav-sub-button0 {
-    cursor: pointer;
-}
