@@ -1,11 +1,27 @@
 $('#all-button').click(() => {
     $('#all-box').fadeIn();
     $('#all-button').fadeOut();
-    //     $("body").css('background-color', '#f4e0cc');
-    //     $("body").css('background-color', '#262601');
-    //     $("body").css('background-color', '#fafafa');
     $("body").css('background-color', '#eff3f7');
 });
+
+
+const clickNav = ['#nav-sub-button0', '#nav-sub-button1','#nav-sub-button2','#nav-sub-button3'];
+const moveDiv = ['.main-background', '#scroll-info', '#scroll-work', '#scroll-proj'];
+
+$(document).ready(function () {
+    for(let i=0; i<4; i++){
+        $(clickNav[i]).click(function () {
+            var offset = $(moveDiv[i]).offset(); //선택한 태그의 위치를 반환
+
+            //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+            $('html').animate({
+                scrollTop: offset.top
+            },100);
+        });
+    }
+    
+});
+
 
 
 var pTag = document.getElementById('p');
@@ -90,23 +106,23 @@ $(document).ready(function () {
 
 
         var 높이 = $(window).scrollTop();
-//                console.log(높이);
+                        console.log(높이);
 
-        $('#info-box').css("opacity", 0 + $(window).scrollTop() / 900);
+        $('#info-box').css("opacity", 0 + $(window).scrollTop() / 600);
         //        $('#info-box').scrollLeft(2)
 
-        $('#work-box').css("opacity", 0 + $(window).scrollTop() / 1800);
+        $('#work-box').css("opacity", 0 + $(window).scrollTop() / 1200);
 
-        $('#scroll-lock').css("opacity", 0 + $(window).scrollTop() / 2700);
+        $('#scroll-lock').css("opacity", 0 + $(window).scrollTop() / 2200);
 
-        $('#pro-box').css("opacity", 0 + $(window).scrollTop() / 2700);
+        $('#pro-box').css("opacity", 0 + $(window).scrollTop() / 2200);
     });
 });
 
 
 $(window).on('scroll', function () {
 
-    if ($(window).scrollTop() > 800) {
+    if ($(window).scrollTop() > 700) {
         $('.nav-menu').addClass('nav-black');
         $('.nav-menu h4').addClass('small-logo');
     } else {
@@ -126,5 +142,3 @@ $(window).on('scroll', function () {
 //        $('.work-box-f').addClass('work-box-l');
 //    }
 //});
-
-
