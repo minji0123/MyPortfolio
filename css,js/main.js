@@ -107,10 +107,9 @@ $(document).ready(function () {
 
 
         var 높이 = $(window).scrollTop();
-                        console.log(높이);
+//                        console.log(높이);
 
         $('#info-box').css("opacity", 0 + $(window).scrollTop() / 600);
-        //        $('#info-box').scrollLeft(2)
 
         $('#work-box').css("opacity", 0 + $(window).scrollTop() / 1200);
 
