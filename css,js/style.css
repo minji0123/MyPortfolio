@@ -42,7 +42,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 11px;
-/*    align-items: center;*/
+    align-items: center;
     background-color: transparent;
     position: fixed;
     z-index: 5;
@@ -54,16 +54,7 @@ a {
     background: #eff3f7;
     color: #393D3F;
 }
-.large-logo {
-    font-size: 50px;
-    margin: 0;
-    margin-left: 50px;
-    transition: all 0.5s;
-}
 
-.small-logo {
-    font-size: 36px;
-}
 #nav-sub-button1 {
     cursor: pointer;
     font-size: 22px;
@@ -99,17 +90,27 @@ a {
 }
 
 
+.large-logo {
+    font-size: 50px;
+    margin: 0;
+    margin-left: 50px;
+    transition: all 0.5s;
+}
+
+.small-logo {
+    font-size: 36px;
+}
+
 
 .white-box {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    /*    box-shadow: 0.5px 0.5px 2px 1px #eee;*/
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
 .yellow-box {
-    /*    background: rgb(193, 193, 193, 0.2);*/
+
     margin-bottom: 23px;
     box-shadow: 0.5px 0.5px 2px 1px lightgrey;
     margin-left: 0px;
@@ -329,6 +330,7 @@ a {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
+        width: 100%;
 }
 
 .work-white-box:hover {
@@ -473,7 +475,7 @@ table {
 
 
 .card-background {
-    height: 3000px;
+    height: 2000px;
 /*    margin-top: 800px;*/
     margin-bottom: 70px;
 }
@@ -490,8 +492,30 @@ table {
     margin-top: 50px;
 }
 
+#all-button {
+    height: 100vh;
+}
+
+
+.nav-btn {
+/*    display:;*/
+}
+
+
+/*
+1200px(태블릿) / 992px / 768px(모바일) / 576px(모바일)
+*/
 
 @media screen and (max-width: 992px) {
+    .aside-skills{
+        margin-bottom: 100px;
+    }
+    .nav-menu{
+        display: block;
+    }
+    #nav-sub-button1{
+        margin-left: 50px;
+    }
     .main-title {
         font-size: 75px;
     }
@@ -510,6 +534,10 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+    .pro-btn{
+        margin-top: 50px;
+        display: flex;
+    }
     .main-title {
         font-size: 55px;
     }
@@ -522,20 +550,4 @@ table {
         font-size: 26px;
     }
 
-}
-
-
-
-
-/*
-1200px(태블릿) / 992px / 768px(모바일) / 576px(모바일)
-    너무 세분화하지마셈*/
-
-#all-button {
-    height: 100vh;
-}
-
-
-.nav-btn {
-    float: right;
 }
