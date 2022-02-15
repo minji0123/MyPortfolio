@@ -40,9 +40,9 @@ a {
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+/*    justify-content: space-between;*/
     padding: 11px;
-    align-items: center;
+    align-items: baseline;
     background-color: transparent;
     position: fixed;
     z-index: 5;
@@ -58,17 +58,18 @@ a {
 #nav-sub-button1 {
     cursor: pointer;
     font-size: 22px;
+    margin-left: 50px;
 }
 
 #nav-sub-button2 {
     cursor: pointer;
     font-size: 22px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 #nav-sub-button3 {
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 40px;
     font-size: 22px;
 }
 
@@ -78,7 +79,7 @@ a {
 
 #nav-sub-button4 {
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 40px;
     font-size: 22px;
 }
 
@@ -91,7 +92,7 @@ a {
 
 
 .large-logo {
-    font-size: 50px;
+    font-size: 45px;
     margin: 0;
     margin-left: 50px;
     transition: all 0.5s;
@@ -509,6 +510,16 @@ table {
 @media screen and (max-width: 992px) {
     .aside-skills{
         margin-bottom: 100px;
+    }
+    #nav-sub-button1{
+        
+    }
+    .large-logo{
+        font-size: 35px;
+         margin-bottom: 20px;
+    }
+    .small-logo{
+        font-size: 25px;
     }
     .nav-menu{
         display: block;
