@@ -511,22 +511,26 @@ table {
     .aside-skills{
         margin-bottom: 100px;
     }
-    #nav-sub-button1{
-        
-    }
+
     .large-logo{
         font-size: 35px;
-         margin-bottom: 20px;
+        margin-left: 20px;
+/*         margin-bottom: 20px;*/
     }
     .small-logo{
         font-size: 25px;
     }
+    table{
+        margin-top: 10px;
+    }
+/*
     .nav-menu{
         display: block;
     }
     #nav-sub-button1{
         margin-left: 50px;
     }
+*/
     .main-title {
         font-size: 75px;
     }
@@ -549,6 +553,15 @@ table {
         margin-top: 50px;
         display: flex;
     }
+    .pro-button{
+        font-size: 15px;
+    }
+    #nav-sub-button1{
+        margin-left: 20px;
+    }
+    #nav-sub-button2, #nav-sub-button3, #nav-sub-button4{
+        margin-left: 30px;
+    }
     .main-title {
         font-size: 55px;
     }
@@ -559,6 +572,12 @@ table {
 
     .project-title {
         font-size: 26px;
+    }
+    tr {
+        font-size: 12px;
+    }
+    .project-letter{
+        font-size: 12px;
     }
 
 }
