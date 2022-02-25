@@ -15,7 +15,7 @@ a {
 }
 
 .space {
-/*    margin: 80px;*/
+    /*    margin: 80px;*/
     padding-top: 100px;
 }
 
@@ -40,7 +40,7 @@ a {
 
 .nav-menu {
     display: flex;
-/*    justify-content: space-between;*/
+    /*    justify-content: space-between;*/
     padding: 11px;
     align-items: baseline;
     background-color: transparent;
@@ -118,6 +118,7 @@ a {
     margin-right: 0px;
     transition: all .5s;
 }
+
 .yellow-box:hover {
     box-shadow: 0.5px 0.5px 2px 1px grey;
 
@@ -132,6 +133,7 @@ a {
     margin-right: 0px;
     transition: all .5s;
 }
+
 .grey-box:hover {
     box-shadow: 0.5px 0.5px 2px 1px grey;
 
@@ -188,7 +190,7 @@ a {
 .main-background {
     width: 100%;
     height: 800px;
-/*    height: 100vh;    */
+    /*    height: 100vh;    */
     background-image: url(../image/workspace.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -196,7 +198,7 @@ a {
     background-position: center;
     padding: 1px;
     position: relative;
-/*    border-radius: 5px;*/
+    /*    border-radius: 5px;*/
 }
 
 
@@ -257,7 +259,7 @@ a {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
 }
 
 
@@ -331,7 +333,7 @@ a {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
-        width: 100%;
+    width: 100%;
 }
 
 .work-white-box:hover {
@@ -477,17 +479,17 @@ table {
 
 .card-background {
     height: 2000px;
-/*    margin-top: 800px;*/
+    /*    margin-top: 800px;*/
     margin-bottom: 70px;
 }
 
-.card-box img{
+.card-box img {
     display: block;
     margin: auto;
     max-width: 80%;
 }
 
-.card-box{
+.card-box {
     position: sticky;
     top: 60px;
     margin-top: 50px;
@@ -499,7 +501,7 @@ table {
 
 
 .nav-btn {
-/*    display:;*/
+    /*    display:;*/
 }
 
 
@@ -508,22 +510,25 @@ table {
 */
 
 @media screen and (max-width: 992px) {
-    .aside-skills{
+    .aside-skills {
         margin-bottom: 100px;
     }
 
-    .large-logo{
+    .large-logo {
         font-size: 35px;
         margin-left: 20px;
-/*         margin-bottom: 20px;*/
+        /*         margin-bottom: 20px;*/
     }
-    .small-logo{
+
+    .small-logo {
         font-size: 25px;
     }
-    table{
+
+    table {
         margin-top: 10px;
     }
-/*
+
+    /*
     .nav-menu{
         display: block;
     }
@@ -549,19 +554,25 @@ table {
 }
 
 @media screen and (max-width: 768px) {
-    .pro-btn{
+    .pro-btn {
         margin-top: 50px;
         display: flex;
     }
-    .pro-button{
+
+    .pro-button {
         font-size: 15px;
     }
-    #nav-sub-button1{
+
+    #nav-sub-button1 {
         margin-left: 20px;
     }
-    #nav-sub-button2, #nav-sub-button3, #nav-sub-button4{
+
+    #nav-sub-button2,
+    #nav-sub-button3,
+    #nav-sub-button4 {
         margin-left: 30px;
     }
+
     .main-title {
         font-size: 55px;
     }
@@ -570,13 +581,82 @@ table {
         font-size: 16px;
     }
 
+    .work-white-box {
+        margin-left: 10px;
+    }
+
+    .aside-skills {
+        padding: inherit;
+    }
+
+
+
     .project-title {
         font-size: 26px;
     }
+
     tr {
         font-size: 12px;
     }
-    .project-letter{
+
+    .project-letter {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .pro-btn {
+        margin-top: 50px;
+    }
+
+    .pro-button {
+        font-size: 13px;
+    }
+
+    #nav-sub-button1 {
+        margin-left: 20px;
+    }
+
+    #nav-sub-button2,
+    #nav-sub-button3,
+    #nav-sub-button4 {
+        margin-left: 25px;
+    }
+
+    .main-title {
+        font-size: 50px;
+    }
+
+    .large-logo {
+        font-size: 33px;
+    }
+
+    .small-logo {
+        font-size: 25px;
+    }
+
+    .para-title {
+        font-size: 14px;
+    }
+
+    #button {
+        font-size: 26px;
+    }
+
+    #more-info p {
+        font-size: 12px;
+    }
+
+    .project-title {
+        font-size: 26px;
+    }
+
+    tr {
+        font-size: 12px;
+    }
+
+    .project-letter {
         font-size: 12px;
     }
 
