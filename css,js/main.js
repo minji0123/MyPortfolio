@@ -70,6 +70,7 @@ $('#all-btn').click(function () {
 
 
 
+
 //$(document).ready(function () {
 //
 //    var scroll_pos = 0;
