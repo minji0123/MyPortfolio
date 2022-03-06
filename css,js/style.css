@@ -619,7 +619,7 @@ table {
     #nav-sub-button2,
     #nav-sub-button3,
     #nav-sub-button4 {
-        margin-left: 25px;
+        margin-left: 15px;
     }
 
     .main-title {
@@ -627,11 +627,11 @@ table {
     }
 
     .large-logo {
-        font-size: 20px;
+        font-size: 33px;
     }
 
     .small-logo {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .para-title {
@@ -657,6 +657,8 @@ table {
     .project-letter {
         font-size: 12px;
     }
-
+    .span-icon{
+        font-size: 20px !important;
+    }
 
 }
